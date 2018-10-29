@@ -3,8 +3,6 @@
 #
 #      client.py
 #
-#      Copyright 2014 Recursos Python - www.recursospython.com
-#
 #
 from socket import socket
 def main():
