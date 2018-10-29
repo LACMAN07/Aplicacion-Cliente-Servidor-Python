@@ -3,8 +3,6 @@
 #
 #      server.py
 #
-#      Copyright 2014 Recursos Python - www.recursospython.com
-#
 #
 from socket import socket, error
 def main():
@@ -22,7 +20,7 @@ def main():
         try:
             # Recibir datos del cliente.
             input_data = conn.recv(1024)
-            print("Estoy en el try")
+            
         except error:
             print("Error de lectura.")
             break
@@ -34,11 +32,11 @@ def main():
                     
                 else:
                     end = input_data == chr(1)
-                    print("Segundo If")
+                
                 if not end:
                     # Almacenar datos.
                     archivoEnviar.write(input_data)
-                    print("Primer Ifnot")
+               
                 else:
                     break
         contador = contador+1
