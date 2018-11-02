@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 #
 #      server.py
@@ -12,7 +12,7 @@ def main():
     s.bind(("localhost", 6000))
     s.listen(0)  
     conn, addr = s.accept()
-    nombre = str(raw_input("nombre de archivo a guardar: "))
+    nombre = str(input("nombre de archivo a guardar: "))
     archivoEnviar = open(nombre, "wb")
     while True:
         try:
