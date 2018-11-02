@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 #
 #      client.py
@@ -10,7 +10,7 @@ def main():
     s.connect(("localhost", 6000))
         
     while True:
-        archivo = str(raw_input("Nombre del archivo a enviar, seguido del formato (Ej. cosa.mp3)"))
+        archivo = str(input("Nombre del archivo a enviar, seguido del formato (Ej. cosa.mp3)"))
         archivoEnviar = open(archivo, "rb")
         content = archivoEnviar.read(1024)
             
